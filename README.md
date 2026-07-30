@@ -43,7 +43,7 @@ Download the wheel and `haru-urara.codex-pet` from the
 then run:
 
 ```bash
-python -m pip install haru_urara_codex_pet-0.1.0-py3-none-any.whl
+python -m pip install haru_urara_codex_pet-0.1.1-py3-none-any.whl
 urara-pet verify-archive haru-urara.codex-pet
 urara-pet install --source haru-urara.codex-pet
 urara-pet doctor --source haru-urara.codex-pet

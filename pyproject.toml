@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "haru-urara-codex-pet"
-version = "0.1.0"
+version = "0.1.1"
 description = "Haru Urara for Codex, plus PetSight visual accessibility auditing."
 readme = "README.md"
 requires-python = ">=3.11"

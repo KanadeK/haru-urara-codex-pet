@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tarfile
 import tempfile
+import tomllib
 import zipfile
 from pathlib import Path
 
@@ -15,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
+from haru_urara_pet import __version__  # noqa: E402
 from haru_urara_pet.archive import inspect_archive, sha256_file  # noqa: E402
 from haru_urara_pet.spec import REQUIRED_CELL_COUNT, UNUSED_CELL_COUNT  # noqa: E402
 
@@ -26,6 +28,16 @@ def run(*arguments: str) -> None:
         raise RuntimeError(
             f"command failed with exit code {result.returncode}: {' '.join(arguments)}"
         )
+
+
+def verify_version_metadata() -> None:
+    with (ROOT / "pyproject.toml").open("rb") as stream:
+        project_version = tomllib.load(stream)["project"]["version"]
+    if project_version != __version__:
+        raise RuntimeError(
+            f"version mismatch: pyproject={project_version}, runtime={__version__}"
+        )
+    print(f"Version metadata agrees: {__version__}.")
 
 
 def check_markdown_links() -> None:
@@ -118,6 +130,7 @@ def verify_release_archives(release_dir: Path) -> None:
 
 def main() -> int:
     try:
+        verify_version_metadata()
         run(sys.executable, "-m", "compileall", "-q", "src", "scripts", "tests")
         run(sys.executable, "-m", "ruff", "check", ".")
         run(sys.executable, "-m", "mypy", "src")
