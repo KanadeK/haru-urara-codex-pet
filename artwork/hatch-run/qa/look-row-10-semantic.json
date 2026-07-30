@@ -1,0 +1,67 @@
+{
+  "row": "look-row-10",
+  "review_scale": "192x208 registered cells",
+  "overall": "pass-with-warnings",
+  "continuity": {
+    "status": "warning",
+    "evidence": "The loop remains monotonic from down through screen-left to up-left. Area changes around 247.5/270/292.5 and the 337.5-to-000 boundary are measurable but do not produce a visible reversal, broken attachment, clipping, or identity change in the labeled normal-size sheet."
+  },
+  "directions": [
+    {
+      "direction": "180",
+      "status": "pass",
+      "horizontal_axis": "centered",
+      "vertical_axis": "down",
+      "evidence": "Both pupils and the head point down; it continues one step after 157.5."
+    },
+    {
+      "direction": "202.5",
+      "status": "pass",
+      "horizontal_axis": "slight screen-left",
+      "vertical_axis": "down",
+      "evidence": "Down remains dominant while the face begins turning left."
+    },
+    {
+      "direction": "225",
+      "status": "pass",
+      "horizontal_axis": "screen-left",
+      "vertical_axis": "down",
+      "evidence": "The head and eyes form a clear down-left diagonal."
+    },
+    {
+      "direction": "247.5",
+      "status": "warning",
+      "horizontal_axis": "screen-left",
+      "vertical_axis": "slight down",
+      "evidence": "Direction is correct and continuous; the continuity metric reports a modest area change approaching 270."
+    },
+    {
+      "direction": "270",
+      "status": "pass",
+      "horizontal_axis": "screen-left",
+      "vertical_axis": "centered",
+      "evidence": "Nose tip, pupils, face surface, and torso form an unmistakable viewer-left profile."
+    },
+    {
+      "direction": "292.5",
+      "status": "warning",
+      "horizontal_axis": "screen-left",
+      "vertical_axis": "slight up",
+      "evidence": "The loop leaves the left profile toward up-left; the metric reports area recovery after the narrow profile."
+    },
+    {
+      "direction": "315",
+      "status": "warning",
+      "horizontal_axis": "screen-left",
+      "vertical_axis": "up",
+      "evidence": "Labeled loop review shows up-left progress, while two blind reviewers reversed the subtle near-vertical horizontal cue."
+    },
+    {
+      "direction": "337.5",
+      "status": "warning",
+      "horizontal_axis": "slight screen-left",
+      "vertical_axis": "up",
+      "evidence": "Up is clear and the pose is one step before 000; the wrap boundary has a 13px center and 1.31 area-ratio warning but no clipping or reversal."
+    }
+  ]
+}

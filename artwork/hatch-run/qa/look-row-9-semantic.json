@@ -1,0 +1,67 @@
+{
+  "row": "look-row-9",
+  "review_scale": "192x208 registered cells",
+  "overall": "pass",
+  "continuity": {
+    "status": "pass",
+    "evidence": "Feet and lower-body baseline stay registered; head, eyes, ears, mane, and shoulders advance monotonically from up through screen-right toward down-right without a visible reversal or scale pop."
+  },
+  "directions": [
+    {
+      "direction": "000",
+      "status": "pass",
+      "horizontal_axis": "centered",
+      "vertical_axis": "up",
+      "evidence": "Both pupils sit high, chin lifts, and ears follow upward; the pose is visibly different from idle."
+    },
+    {
+      "direction": "022.5",
+      "status": "pass",
+      "horizontal_axis": "slight screen-right",
+      "vertical_axis": "up",
+      "evidence": "Upward gaze remains dominant while the face begins its rightward turn."
+    },
+    {
+      "direction": "045",
+      "status": "pass",
+      "horizontal_axis": "screen-right",
+      "vertical_axis": "up",
+      "evidence": "Eyes and face share a clear up-right diagonal."
+    },
+    {
+      "direction": "067.5",
+      "status": "pass",
+      "horizontal_axis": "screen-right",
+      "vertical_axis": "slight up",
+      "evidence": "Rightward turn dominates and remains one continuous step before the profile."
+    },
+    {
+      "direction": "090",
+      "status": "pass",
+      "horizontal_axis": "screen-right",
+      "vertical_axis": "centered",
+      "evidence": "Nose tip, pupils, face surface, and upper body form an unmistakable viewer-right profile."
+    },
+    {
+      "direction": "112.5",
+      "status": "pass",
+      "horizontal_axis": "screen-right",
+      "vertical_axis": "slight down",
+      "evidence": "The face begins returning from profile and the eyes move below center."
+    },
+    {
+      "direction": "135",
+      "status": "pass",
+      "horizontal_axis": "screen-right",
+      "vertical_axis": "down",
+      "evidence": "Head and eyes read down-right without exposing the back of the body."
+    },
+    {
+      "direction": "157.5",
+      "status": "pass",
+      "horizontal_axis": "slight screen-right",
+      "vertical_axis": "down",
+      "evidence": "The face is nearly frontal, pupils are low, and the pose approaches the approved 180 down family."
+    }
+  ]
+}

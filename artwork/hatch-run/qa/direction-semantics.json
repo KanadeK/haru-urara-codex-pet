@@ -1,0 +1,36 @@
+{
+  "overall": "pass-with-warnings",
+  "cardinals": {
+    "000": "pass",
+    "090": "pass",
+    "180": "pass",
+    "270": "pass"
+  },
+  "hard_failures": [],
+  "review_warnings": [
+    "Blind horizontal cues were ambiguous at 022.5 and 337.5.",
+    "Blind majorities reversed subtle horizontal cues at 045, 067.5, and 315.",
+    "The horizontal cue at 157.5 was ambiguous to two reviewers.",
+    "Continuity metrics flagged local pixel-difference outliers at 067.5->090 and 135->157.5.",
+    "Continuity metrics flagged profile-area changes around 270 and at the 337.5->000 wrap."
+  ],
+  "labeled_resolution": "At normal labeled size the ordered loop advances without a wrong principal quadrant, visible reversal, clipping, broken attachment, identity change, or conspicuous one-frame jump. All four cardinals are unmistakable. The listed intermediate concerns are accepted as review warnings under the direction acceptance policy.",
+  "directions": [
+    {"direction": "000", "status": "pass", "horizontal": "centered", "vertical": "up"},
+    {"direction": "022.5", "status": "warning", "horizontal": "subtle screen-right", "vertical": "up"},
+    {"direction": "045", "status": "warning", "horizontal": "screen-right in labeled loop", "vertical": "up"},
+    {"direction": "067.5", "status": "warning", "horizontal": "screen-right in labeled loop", "vertical": "slight up"},
+    {"direction": "090", "status": "pass", "horizontal": "screen-right", "vertical": "centered"},
+    {"direction": "112.5", "status": "pass", "horizontal": "screen-right", "vertical": "slight down"},
+    {"direction": "135", "status": "pass", "horizontal": "screen-right", "vertical": "down"},
+    {"direction": "157.5", "status": "warning", "horizontal": "subtle screen-right", "vertical": "down"},
+    {"direction": "180", "status": "pass", "horizontal": "centered", "vertical": "down"},
+    {"direction": "202.5", "status": "pass", "horizontal": "screen-left", "vertical": "down"},
+    {"direction": "225", "status": "pass", "horizontal": "screen-left", "vertical": "down"},
+    {"direction": "247.5", "status": "warning", "horizontal": "screen-left", "vertical": "slight down"},
+    {"direction": "270", "status": "pass", "horizontal": "screen-left", "vertical": "centered"},
+    {"direction": "292.5", "status": "warning", "horizontal": "screen-left", "vertical": "slight up"},
+    {"direction": "315", "status": "warning", "horizontal": "subtle screen-left", "vertical": "up"},
+    {"direction": "337.5", "status": "warning", "horizontal": "subtle screen-left", "vertical": "up"}
+  ]
+}

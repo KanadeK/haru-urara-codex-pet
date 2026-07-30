@@ -1,0 +1,18 @@
+{
+  "pairs": [
+    {"pair": "horizontal-1", "A": "ambiguous", "B": "ambiguous", "reason": "Both are nearly frontal with centered facial landmarks."},
+    {"pair": "horizontal-2", "A": "screen-right", "B": "screen-left", "reason": "A turns right and B turns left."},
+    {"pair": "horizontal-3", "A": "screen-left", "B": "screen-left", "reason": "Both visible head cues appear leftward."},
+    {"pair": "horizontal-4", "A": "screen-left", "B": "screen-right", "reason": "Clear opposing side profiles."},
+    {"pair": "horizontal-5", "A": "screen-left", "B": "screen-right", "reason": "Face and body turn left in A and right in B."},
+    {"pair": "horizontal-6", "A": "screen-left", "B": "screen-right", "reason": "A's gaze is left and B's is right."},
+    {"pair": "horizontal-7", "A": "screen-left", "B": "ambiguous", "reason": "A remains left-biased; B is nearly frontal."},
+    {"pair": "vertical-1", "A": "up", "B": "down", "reason": "A looks up and B looks down."},
+    {"pair": "vertical-2", "A": "down", "B": "up", "reason": "A lowers head and gaze; B raises them."},
+    {"pair": "vertical-3", "A": "up", "B": "down", "reason": "A's chin and gaze rise while B's fall."},
+    {"pair": "vertical-4", "A": "up", "B": "down", "reason": "A looks slightly up and B slightly down."},
+    {"pair": "vertical-5", "A": "down", "B": "up", "reason": "A looks down and B looks up."},
+    {"pair": "vertical-6", "A": "up", "B": "down", "reason": "A raises the face and B lowers it."},
+    {"pair": "vertical-7", "A": "up", "B": "down", "reason": "A's profile pitches up and B's pitches down."}
+  ]
+}

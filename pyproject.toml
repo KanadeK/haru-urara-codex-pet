@@ -1,0 +1,114 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "haru-urara-codex-pet"
+version = "0.1.0"
+description = "Haru Urara for Codex, plus PetSight visual accessibility auditing."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+  { name = "KanadeK", email = "121669563+KanadeK@users.noreply.github.com" },
+]
+keywords = [
+  "codex",
+  "desktop-pet",
+  "accessibility",
+  "color-vision",
+  "spritesheet",
+  "umamusume",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = ["Pillow>=11.3,<13"]
+
+[project.optional-dependencies]
+dev = [
+  "build==1.3.0",
+  "coverage[toml]==7.10.6",
+  "hatchling==1.27.0",
+  "mypy==1.17.1",
+  "pytest==8.4.1",
+  "pytest-cov==6.2.1",
+  "ruff==0.12.11",
+]
+
+[project.scripts]
+urara-pet = "haru_urara_pet.cli:main"
+petsight = "haru_urara_pet.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/KanadeK/haru-urara-codex-pet"
+Issues = "https://github.com/KanadeK/haru-urara-codex-pet/issues"
+Documentation = "https://github.com/KanadeK/haru-urara-codex-pet#readme"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/haru_urara_pet"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"pet/haru-urara" = "haru_urara_pet/bundled_pet"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/scripts",
+  "/examples",
+  "/pet",
+  "/web",
+  "/docs",
+  "/README.md",
+  "/README.zh-CN.md",
+  "/LICENSE",
+  "/ASSET_TERMS.md",
+  "/NOTICE.md",
+  "/pyproject.toml",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["haru_urara_pet"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+skip_covered = true
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "if __name__ == .__main__.:",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["artwork/hatch-run"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "RUF", "S", "SIM", "C4", "PTH"]
+ignore = ["S101"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101", "S108"]
+"scripts/**/*.py" = ["S603", "S607"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["haru_urara_pet"]

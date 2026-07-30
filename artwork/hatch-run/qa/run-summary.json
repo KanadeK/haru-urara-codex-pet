@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "populated_cells": 74,
+  "unused_cells": 14,
+  "run_dir": "artwork/hatch-run",
+  "spritesheet": "artwork/hatch-run/final/spritesheet-extended.webp",
+  "validation": "artwork/hatch-run/final/validation-extended.json",
+  "chroma_despill": "artwork/hatch-run/qa/chroma-despill-extended.json",
+  "contact_sheet": "artwork/hatch-run/qa/contact-sheet-extended.png",
+  "direction_sheet": "artwork/hatch-run/qa/look-directions.png",
+  "direction_semantics": "artwork/hatch-run/qa/direction-semantics.json",
+  "blind_direction_validation": "artwork/hatch-run/qa/direction-blind-validation.json",
+  "blind_review_resolution": "artwork/hatch-run/qa/blind-review-resolution.json",
+  "continuity": "artwork/hatch-run/qa/look-continuity.json",
+  "standard_review": "artwork/hatch-run/qa/review.json",
+  "final_visual_review": "artwork/hatch-run/qa/final-visual-review.json",
+  "package": "pet/haru-urara"
+}

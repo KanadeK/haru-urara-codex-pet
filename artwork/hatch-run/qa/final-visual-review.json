@@ -1,0 +1,14 @@
+{
+  "decision": "pass",
+  "severity": "minor",
+  "reviewed_artifact": "contact-sheet-extended.png",
+  "checks": {
+    "direction_reversal": "not observed",
+    "identity_drift": "not observed",
+    "clipping": "not observed",
+    "alpha_holes": "not observed",
+    "look_337_5_to_000_scale_pop": "not visible at normal review size"
+  },
+  "contract_note": "The atlas contains 74 populated cells: 73 animation/direction frames and the dedicated neutral look frame at row 0, column 6. The remaining 14 cells are transparent.",
+  "resolution": "The minor continuity warnings remain documented and do not block packaging because cardinal blind QA passed unanimously and labeled normal-size review found no reversal or visible discontinuity."
+}

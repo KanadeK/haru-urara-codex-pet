@@ -1,0 +1,16 @@
+{
+  "backgrounds": {
+    "codex-dark": "#0D1117",
+    "paper-light": "#FFFFFF"
+  },
+  "minimum_edge_contrast": 1.12,
+  "warning_edge_contrast": 1.35,
+  "minimum_motion_ratio": 0.002,
+  "maximum_area_cv": 0.36,
+  "warning_area_cv": 0.22,
+  "maximum_baseline_span": 18,
+  "warning_baseline_span": 10,
+  "minimum_coverage": 0.015,
+  "maximum_coverage": 0.82,
+  "display_scale": 0.5
+}

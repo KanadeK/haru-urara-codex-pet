@@ -1,0 +1,14 @@
+{
+  "decision": "accept",
+  "severity": "minor",
+  "reviewed_by": "parent",
+  "failed_checks": [],
+  "review_warnings": [
+    "Near-vertical horizontal cues at 022.5 and 337.5 were ambiguous.",
+    "Blind horizontal majorities differed from the answer key at 045, 067.5, and 315.",
+    "The horizontal cue at 157.5 was ambiguous."
+  ],
+  "hard_gate_evidence": "All three blind reviewers correctly classified the 000/180 vertical cardinal pair and the 090/270 horizontal cardinal pair.",
+  "labeled_evidence": "The labeled 16-cell sheet shows the intended monotonic loop and correct principal quadrants. The disputed cells are intermediate directions with subtle horizontal components; none reverses the loop or changes identity.",
+  "continuity_evidence": "The continuity report is structurally OK with no alpha holes. Its warnings are metric candidates without a visible broken silhouette, attachment, or reversal."
+}
